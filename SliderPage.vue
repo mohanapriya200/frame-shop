@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .frameshop-home {
-  background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80');
+ background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
   background-position: center;
   min-height: 85vh;
@@ -48,7 +48,7 @@ export default {
 }
 
 .content-box {
-  background: rgba(245, 241, 241, 0.75);
+  background: rgba(236, 232, 232, 0.75);
   backdrop-filter: blur(6px);
   padding: 2rem 3rem;
   border-radius: 20px;
@@ -92,3 +92,4 @@ export default {
 }
 
 </style>
+

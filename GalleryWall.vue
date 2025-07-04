@@ -1,7 +1,6 @@
 <template>
   <section class="gallery-wall">
-    <h2 class="section-title">🖼️ Gallery Walls</h2>
-
+    <h2 class="section-title">Gallery Walls</h2>
     <div class="gallery-grid">
       <div class="product-card" v-for="(product, index) in products" :key="index">
         <div class="image-wrapper">
@@ -20,45 +19,40 @@ export default {
   data() {
     return {
       products: [
+      { id: 1, name: 'Osaka Trio (set of 3)', price: 10000, image: require('@/assets/b1.jpg') },
         {
-          name: 'Osaka Trio',
-          price: 8999,
-          image: 'https://images.unsplash.com/photo-1585550641454-9b7d6e49004d?w=500&h=300&fit=crop&auto=format'
+        id:2,name: 'Uneven Trio - Metal Frame (set of 5)', price: 11449,
+          image: require('@/assets/b2.jpg')
         },
         {
-          name: 'Uneven Trio - Metal Frame',
-          price: 11449,
-          image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=500&h=300&fit=crop&auto=format'
-        },
-        {
-          name: 'Snow Pair',
+          name: 'Snow Pair (set of 4)',
           price: 6999,
-          image: 'https://images.unsplash.com/photo-1505692794403-75b5e6adad3c?w=500&h=300&fit=crop&auto=format'
+          image:  require('@/assets/b3.jpg')
         },
         {
-          name: '31" x 24" Gallery Wall Metal Frames (Set of 7)',
+          name: ' Wall Metal Frames(set of 15)',
           price: 23999,
-          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=300&fit=crop&auto=format'
+          image:  require('@/assets/b4.jpg')
         },
         {
-          name: '45" x 41" Gallery Wall HDPS Frames (Set of 13)',
+          name:' Wall HDPS Frames (Set of 13)',
           price: 14999,
-          image: 'https://images.unsplash.com/photo-1595526114035-93b8cc8a60fc?w=500&h=300&fit=crop&auto=format'
+          image: require('@/assets/b5.jpg')
         },
         {
-          name: '64"x42" Gallery Wall Wooden Frame (Set of 6)',
+          name: 'Wall Wooden Frame (Set of 6)',
           price: 36999,
-          image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=500&h=300&fit=crop&auto=format'
+          image: require('@/assets/b6.jpg')
         },
         {
           name: 'Metallic Quint',
           price: 13799,
-          image: 'https://images.unsplash.com/photo-1586244431083-30fdd8d5974b?w=500&h=300&fit=crop&auto=format'
+          image: require('@/assets/b8.jpg')
         },
         {
-          name: '56"x44" Gallery Wall Wooden Frame (Set of 8)',
+          name: 'Acrylic Frame (Set of 3)',
           price: 22999,
-          image: 'https://images.unsplash.com/photo-1616627980541-296f51a7587d?w=500&h=300&fit=crop&auto=format'
+          image: require('@/assets/b7.jpg')
         }
       ]
     };
@@ -68,7 +62,7 @@ export default {
 <style scoped>
 .gallery-wall {
   padding: 3rem 1rem;
-  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  background: linear-gradient(to bottom right,rgb(244, 245, 246),rgb(243, 246, 248));
   font-family: 'Segoe UI', sans-serif;
   animation: fadeIn 0.8s ease-in-out;
 }
@@ -77,7 +71,7 @@ export default {
   text-align: center;
   font-size: 2.4rem;
   font-weight: bold;
-  color: #2c3e50;
+  color:rgb(17, 17, 17);
   margin-bottom: 2rem;
 }
 
@@ -90,9 +84,9 @@ export default {
 }
 
 .product-card {
-  background: white;
+  background: rgba(88, 86, 86, 0.07);
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 8px 24px rgba(112, 109, 109, 0.07);
   overflow: hidden;
   text-align: center;
   padding-bottom: 1rem;
